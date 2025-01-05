@@ -1,0 +1,63 @@
+/* Universal Styling */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    color: #555;
+}
+
+nav, ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Universal Styling */
+/* Header section styling */
+.header{
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 35px 100px 0px;
+}
+
+.header h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header nav{
+    display: flex;
+}
+.header nav li{
+    margin:0px 15px;
+}
+.header nav li:first-child{
+    margin-left: 0px;
+}
+
+@media (max-width : 1000px){
+    .header {
+        padding: 20px 50px;
+    }
+
+}
+
+@media (max-width : 700px){
+    .header {
+        flex-direction: column;
+    }
+    .header h3{
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+}
